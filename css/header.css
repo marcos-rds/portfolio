@@ -1,0 +1,44 @@
+header {
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.header-menu a {
+  display: block;
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.25rem;
+  font-variant: small-caps;
+  letter-spacing: 0.05em;
+  background-color: #f0f0f0;
+  text-decoration: none;
+  color: #525252;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+.header-menu a:hover {
+  background-color: #e0e0e0;
+  color: #3d3d3d;
+  transition-duration: 0.3s;
+}
+
+@media (max-width: 900px) {
+  header {
+    flex-direction: column;
+    gap: 40px;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 380px) {
+  header img {
+    width: 100vw;
+  }
+}
