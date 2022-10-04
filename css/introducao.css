@@ -1,7 +1,7 @@
 body {
   background-image: url(../img/fundo-mec.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100vw;
 }
 main {
   display: grid;
