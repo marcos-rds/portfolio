@@ -1,4 +1,6 @@
 header {
+  max-width: 1200px;
+  margin: 0 auto;
   padding: 40px;
   display: flex;
   align-items: center;
@@ -37,8 +39,8 @@ header {
   }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 420px) {
   header img {
-    width: 100vw;
+    width: 90%;
   }
 }

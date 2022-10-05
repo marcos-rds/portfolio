@@ -1,16 +1,19 @@
-body {
+main {
   background-image: url(../img/fundo-mec.jpg);
   background-repeat: no-repeat;
-  background-size: 100vw;
+  background-attachment: fixed;
+  background-size: cover;
 }
-main {
+section#introducao {
+  max-width: 1200px;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 2fr;
-  margin: 90px 0;
-  gap: 60px;
+  gap: 20px 0;
   padding: 40px;
 }
 #foto-perfil > img {
+  display: block;
   border-radius: 50%;
   width: 240px;
   border: 5px solid #fafafa;
@@ -29,28 +32,42 @@ main {
   font-size: 4rem;
   font-weight: 700;
   line-height: 4rem;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 1;
+}
+#cargo h1::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-image: url(../img/icones/dec-titulo.svg);
+  top: -15px;
+  left: -30px;
+  z-index: -1;
 }
 #cargo p {
   font-family: "Roboto", Arial, sans-serif;
   font-size: 1.5rem;
+  font-weight: 400;
   color: #525252;
 }
 #redes {
   grid-column: 1;
   display: flex;
-  flex-wrap: wrap;
   gap: 20px;
   justify-self: center;
+  height: max-content;
 }
 #objetivo {
+  margin-top: 100px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   max-width: 600px;
 }
-#objetivo h2 {
-  padding: 52px 0;
+h2 {
   font-size: 3rem;
   font-variant: small-caps;
   font-weight: 700;
@@ -60,6 +77,99 @@ div#objetivo-p {
   grid-column: 2;
   font-family: "Roboto", Arial, sans-serif;
   font-size: 1.25rem;
-  line-height: 2rem;
+  font-weight: 400;
+  line-height: 1.5;
   max-width: 600px;
+  padding-top: 40px;
+  margin-bottom: 80px;
+  color: #3d3d3d;
+}
+div#objetivo-p strong {
+  color: #525252;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 850px) {
+  #objetivo,
+  div#objetivo-p {
+    grid-column: 1 / -1;
+    justify-content: space-around;
+    max-width: 800px;
+  }
+  #objetivo {
+    margin-top: 50px;
+  }
+  section#introducao {
+    gap: 20px 35px;
+    padding: 30px;
+  }
+}
+@media (max-width: 670px) {
+  #cargo h1 {
+    font-size: 3.4rem;
+    line-height: 1.2;
+    margin-bottom: 5px;
+  }
+  #objetivo h2 {
+    font-size: 2.5rem;
+  }
+  #cargo p {
+    font-size: 1.25rem;
+  }
+  #foto-perfil > img {
+    width: 90%;
+  }
+  #objetivo > img {
+    width: 80px;
+  }
+  #cargo h1::before {
+    background-size: 85%;
+    background-repeat: no-repeat;
+  }
+  section#introducao {
+    gap: 20px;
+    padding: 30px;
+  }
+}
+@media (max-width: 570px) {
+  section#introducao {
+    display: block;
+    grid-template-columns: 1fr;
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px;
+  }
+  #foto-perfil > img {
+    display: inline-block;
+    width: 200px;
+  }
+  #redes {
+    margin: 20px;
+    justify-content: center;
+    /* display: inline-block; */
+  }
+  #cargo h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    line-height: 1.2;
+  }
+  div#objetivo-p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-top: 30px;
+    text-align: left;
+  }
+  #cargo h1 {
+    display: inline-block;
+  }
+  #cargo h1::before {
+    width: 70px;
+    height: 70px;
+    top: -8px;
+    left: -20px;
+  }
+  #objetivo > img {
+    width: 60px;
+  }
 }
