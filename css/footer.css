@@ -1,0 +1,16 @@
+footer {
+  background-color: #292929;
+  text-align: center;
+  height: 30px;
+  font-size: 0.75rem;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  color: #b8b8b8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer a {
+  color: #b8b8b8;
+  font-weight: 700;
+  text-decoration: none;
+}
