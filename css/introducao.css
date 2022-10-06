@@ -9,7 +9,7 @@ section#introducao {
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 2fr;
-  gap: 20px 0;
+  gap: 20px 0px;
   padding: 40px;
 }
 #foto-perfil > img {
@@ -103,6 +103,11 @@ div#objetivo-p strong {
   section#introducao {
     gap: 20px 35px;
     padding: 30px;
+  }
+}
+@media (max-width: 1010px) {
+  #cargo {
+    padding-left: 20px;
   }
 }
 @media (max-width: 670px) {
