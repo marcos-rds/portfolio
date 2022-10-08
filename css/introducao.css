@@ -87,8 +87,16 @@ div#objetivo-p {
 div#objetivo-p strong {
   color: #525252;
 }
+/* RESPONSIVIDADE OBJETIVO*/
 
-/* RESPONSIVIDADE */
+@media (max-width: 1010px) {
+  #cargo {
+    padding-left: 20px;
+  }
+  #dados-contato p {
+    font-size: 2rem;
+  }
+}
 
 @media (max-width: 850px) {
   #objetivo,
@@ -105,18 +113,14 @@ div#objetivo-p strong {
     padding: 30px;
   }
 }
-@media (max-width: 1010px) {
-  #cargo {
-    padding-left: 20px;
-  }
-}
+
 @media (max-width: 670px) {
   #cargo h1 {
     font-size: 3.4rem;
     line-height: 1.2;
     margin-bottom: 5px;
   }
-  #objetivo h2 {
+  h2 {
     font-size: 2.5rem;
   }
   #cargo p {
@@ -125,7 +129,7 @@ div#objetivo-p strong {
   #foto-perfil > img {
     width: 90%;
   }
-  #objetivo > img {
+  #objetivo img {
     width: 80px;
   }
   #cargo h1::before {
@@ -137,6 +141,7 @@ div#objetivo-p strong {
     padding: 30px;
   }
 }
+
 @media (max-width: 570px) {
   section#introducao {
     display: block;
@@ -152,7 +157,6 @@ div#objetivo-p strong {
   #redes {
     margin: 20px;
     justify-content: center;
-    /* display: inline-block; */
   }
   #cargo h1 {
     text-align: center;

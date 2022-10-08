@@ -31,6 +31,8 @@ header {
   transition-duration: 0.3s;
 }
 
+/* RESPONSIVIDADE HEADER */
+
 @media (max-width: 900px) {
   header {
     flex-direction: column;

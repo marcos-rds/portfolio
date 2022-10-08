@@ -26,7 +26,7 @@ section#formacao::after {
   bottom: 60px;
   left: 60px;
 }
-.form-intro {
+#form-intro {
   margin-top: 80px;
   grid-column: 2;
   grid-row: 1;
@@ -61,7 +61,7 @@ section#formacao::after {
   grid-column: 2;
   grid-row: 4;
 }
-.form-intro h2 {
+#form-intro h2 {
   font-weight: 700;
   color: #cccccc;
 }
@@ -148,4 +148,45 @@ section#formacao::after {
 }
 ul#horas > li {
   color: #8f8f8f;
+}
+
+/* RESPONSIVIDADE FORMACAO */
+
+@media (max-width: 1010px) {
+  #dados-contato p {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 850px) {
+  section#formacao,
+  #form-intro-p,
+  #graduacao,
+  #cursos-extras {
+    grid-column: 1 / -1;
+    justify-content: center;
+  }
+  #cursos-extras {
+    justify-self: center;
+  }
+  #form-intro-p {
+    max-width: max-content;
+  }
+  #form-intro {
+    grid-column: 1 / -1;
+    justify-content: space-around;
+    max-width: 800px;
+  }
+  section#formacao::before {
+    display: none;
+  }
+  section#formacao::after {
+    display: none;
+  }
+}
+
+@media (max-width: 670px) {
+  #form-intro > img {
+    width: 80px;
+  }
 }
