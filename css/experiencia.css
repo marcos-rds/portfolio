@@ -117,10 +117,10 @@
 
 @media (max-width: 480px) {
   .empresa-cargo {
-    flex-wrap: wrap;
+    display: inline-block;
   }
-  .empresa-cargo h3 {
-    padding-right: 60px;
+  #experiencia h4 {
+    font-weight: 500;
   }
   #experiencia {
     padding: 60px 20px;
