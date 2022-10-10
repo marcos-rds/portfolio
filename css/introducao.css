@@ -148,7 +148,7 @@ div#objetivo-p strong {
     grid-template-columns: 1fr;
     text-align: center;
     margin: 0 auto;
-    padding: 40px;
+    padding: 40px 20px;
   }
   #foto-perfil > img {
     display: inline-block;
@@ -166,6 +166,7 @@ div#objetivo-p strong {
   div#objetivo-p {
     font-size: 1rem;
     text-align: left;
+    margin-bottom: 20px;
   }
   #cargo h1 {
     display: inline-block;

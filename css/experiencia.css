@@ -89,7 +89,6 @@
   #experiencia span {
     display: block;
     text-align: end;
-    margin-top: 60px;
   }
 }
 
@@ -100,6 +99,9 @@
 }
 
 @media (max-width: 590px) {
+  #exp-intro {
+    margin-bottom: 50px;
+  }
   #exp-intro > img {
     width: 60px;
   }
@@ -110,5 +112,17 @@
   .box-cargo p,
   #experiencia span {
     font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .empresa-cargo {
+    flex-wrap: wrap;
+  }
+  .empresa-cargo h3 {
+    padding-right: 60px;
+  }
+  #experiencia {
+    padding: 60px 20px;
   }
 }

@@ -22,7 +22,7 @@
 #email p {
   padding-bottom: 30px;
 }
-#dados-contato {
+#dados-contato p {
   font-size: 2.5rem;
   font-weight: 500;
   color: #fafafa;
@@ -34,4 +34,37 @@
   position: absolute;
   top: -50px;
   right: 10px;
+}
+
+@media (max-width: 850px) {
+  #contato {
+    gap: 60px;
+  }
+  #contato-p {
+    text-align: center;
+    grid-column: 1 / -1;
+  }
+  #dados-contato {
+    grid-column: 1 / -1;
+    text-align: center;
+  }
+}
+
+@media (max-width: 670px) {
+  #dados-contato p {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 590px) {
+  #contato {
+    padding: 60px 20px;
+    gap: 30px;
+  }
+  #dados-contato p {
+    font-size: 1.5rem;
+  }
+  #contato-p {
+    font-size: 1rem;
+  }
 }

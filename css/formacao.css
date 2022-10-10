@@ -3,7 +3,7 @@
 }
 section#formacao {
   margin: 0 auto;
-  padding: 40px 40px 120px 40px;
+  padding: 120px 40px;
   max-width: 1200px;
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -27,7 +27,6 @@ section#formacao::after {
   left: 60px;
 }
 #form-intro {
-  margin-top: 80px;
   grid-column: 2;
   grid-row: 1;
   display: flex;
@@ -211,6 +210,9 @@ ul#horas > li {
 }
 
 @media (max-width: 590px) {
+  section#formacao {
+    padding: 60px 20px;
+  }
   div#form-intro-p {
     font-size: 1rem;
     margin-top: 30px;
@@ -225,4 +227,7 @@ ul#horas > li {
   .cursos ul li {
     font-size: 1rem;
   }
+}
+#formacao {
+  padding: 60px 20px;
 }
