@@ -55,7 +55,7 @@
   top: 0px;
   left: -24px;
 }
-section#experiencia::before {
+#experiencia::before {
   content: url(../img/icones/top-left.svg);
   width: 53px;
   height: 52px;
@@ -63,11 +63,52 @@ section#experiencia::before {
   top: 60px;
   left: 60px;
 }
-section#experiencia::after {
+#experiencia::after {
   content: url(../img/icones/bottom-left.svg);
   width: 53px;
   height: 52px;
   position: absolute;
   bottom: 60px;
   left: 60px;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 850px) {
+  #experiencia {
+    display: inline-block;
+  }
+  #exp-intro {
+    display: flex;
+    justify-content: space-around;
+  }
+  #experiencia::before,
+  #experiencia::after {
+    display: none;
+  }
+  #experiencia span {
+    display: block;
+    text-align: end;
+    margin-top: 60px;
+  }
+}
+
+@media (max-width: 670px) {
+  #exp-intro > img {
+    width: 80px;
+  }
+}
+
+@media (max-width: 590px) {
+  #exp-intro > img {
+    width: 60px;
+  }
+  #experiencia h3,
+  #experiencia h4 {
+    font-size: 1rem;
+  }
+  .box-cargo p,
+  #experiencia span {
+    font-size: 0.875rem;
+  }
 }
