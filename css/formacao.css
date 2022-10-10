@@ -111,7 +111,7 @@ section#formacao::after {
   color: #8f8f8f;
   padding-bottom: 20px;
 }
-.cursos {
+.cursos h3 {
   position: relative;
 }
 #intensivos::before {
@@ -134,10 +134,17 @@ section#formacao::after {
 }
 #lista {
   max-width: 600px;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: auto auto;
+  align-items: center;
 }
+/* #lista ul {
+  display: grid;
+} */
+
 .cursos ul li {
+  display: block;
   color: #fafafa;
   font-size: 1.125rem;
   font-weight: 400;
@@ -183,10 +190,39 @@ ul#horas > li {
   section#formacao::after {
     display: none;
   }
+  #horas li {
+    padding-left: 40px;
+  }
 }
 
 @media (max-width: 670px) {
   #form-intro > img {
     width: 80px;
+  }
+  #cursos-extras h3 {
+    padding-left: 40px;
+  }
+  #intensivos::before {
+    left: 3px;
+  }
+  #idiomas::before {
+    left: -2px;
+  }
+}
+
+@media (max-width: 590px) {
+  div#form-intro-p {
+    font-size: 1rem;
+    margin-top: 30px;
+  }
+  #form-intro img {
+    width: 60px;
+  }
+  .grad-curso > p > strong,
+  .grad-curso > p {
+    font-size: 1rem;
+  }
+  .cursos ul li {
+    font-size: 1rem;
   }
 }
