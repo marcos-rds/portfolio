@@ -194,6 +194,7 @@ section#formacao::after {
 @media (max-width: 670px) {
   #form-intro > img {
     width: 80px;
+    height: auto;
   }
   #cursos-extras h3 {
     padding-left: 40px;

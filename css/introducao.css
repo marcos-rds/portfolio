@@ -16,6 +16,7 @@ section#introducao {
   display: block;
   border-radius: 50%;
   width: 240px;
+  height: auto;
   border: 5px solid #fafafa;
   box-shadow: 0px 0px 0px 1px #f0f0f0, 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
@@ -131,6 +132,7 @@ div#objetivo-p strong {
   }
   #objetivo img {
     width: 80px;
+    height: auto;
   }
   #cargo h1::before {
     background-size: 85%;
