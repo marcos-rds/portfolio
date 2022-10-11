@@ -109,8 +109,6 @@ section#formacao::after {
   letter-spacing: 0.05em;
   color: #8f8f8f;
   padding-bottom: 20px;
-}
-.cursos h3 {
   position: relative;
 }
 #intensivos::before {
@@ -131,29 +129,28 @@ section#formacao::after {
   top: -5.5px;
   left: -42px;
 }
-#lista {
+#lista ul {
   max-width: 600px;
-  display: grid;
-  gap: 10px;
-  grid-template-columns: auto auto;
-  align-items: center;
 }
-/* #lista ul {
-  display: grid;
-} */
 
-.cursos ul li {
-  display: block;
+#cursos-extras ul li {
   color: #fafafa;
   font-size: 1.125rem;
   font-weight: 400;
   padding: 10px 0;
 }
-.cursos ul li span {
+
+#cursos-extras ul li span {
   color: #a3a3a3;
 }
-ul#horas > li {
-  color: #8f8f8f;
+
+#lista ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#lista ul li span.horas-curso {
+  padding-left: 20px;
 }
 
 /* RESPONSIVIDADE FORMACAO */
